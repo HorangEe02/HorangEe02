@@ -2,7 +2,7 @@
 
 챗봇, LLM 애플리케이션, AI 에이전트를 만들고 배포합니다.
 숫자와 안전 판단은 코드와 규칙에 맡기고, LLM에는 이해와 설명을 맡기는 구조를 좋아합니다.
-지금은 식단·운동·걷기 앱 세 개를 하나로 묶은 웰니스 AI 에이전트를 만들고 있습니다.
+개인 프로젝트로 식단, 운동, 걷기 앱 세 개를 하나로 묶은 웰니스 AI 에이전트를 만들고 있습니다.
 
 🔗 **Portfolio** · https://junyeong-portfolio-one.vercel.app
 
@@ -37,7 +37,7 @@
 
 | 분야 | 기술 | 써 본 곳 |
 |---|---|---|
-| **Agent · 오케스트레이션** | `LangGraph` (Python · JS) `LlamaIndex` `Tool Calling` `Multi-Agent` | 웰니스 에이전트 그래프, 레모니, 사내 업무 에이전트 전환, KBO 플래너 |
+| **Agent · 오케스트레이션** | `LangGraph` (Python · JS) `LlamaIndex` `Tool Calling` `Multi-Agent` | 웰니스 에이전트 그래프, KBO 플래너 |
 | **LLM 런타임 · 모델** | `Ollama` `LM Studio` `llama.cpp` `Gemini API` `Vertex AI` · `Gemma 4` `Qwen 3.5` `EXAONE` `LFM3` `d1-2B` | 로컬 LLM 서빙, 클라우드↔로컬 모델 전환, 용도별 모델 비교·선택 |
 | **RAG · 검색** | `ChromaDB` `pgvector` `FAISS` `BM25` 하이브리드 검색 · `bge-m3` `E5` `sentence-transformers` | 근거 문서 기반 답변, 멀티모달 도면 검색, 운동·영양 검색 |
 | **평가 · 안전** | 평가 문항 세트와 실행기, 규칙 + 판정 모델 가드, 구조화 출력(JSON 스키마) 검증 | 위기 신호 판정, 금지 답변 점검, 실패 사례 반복 수정 |
