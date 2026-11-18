@@ -1,8 +1,8 @@
 ## 박준영 · AI 개발자
 
 챗봇, LLM 애플리케이션, AI 에이전트를 만들고 배포합니다.
-지금은 레몬헬스케어 AI Agent 파트에서 건강의신 앱의 AI 건강상담 챗봇 ‘레모니’를 만들고 있고,
-개인적으로는 식단·운동·걷기 앱 세 개를 하나로 묶은 웰니스 AI 에이전트를 만들고 있습니다.
+숫자와 안전 판단은 코드와 규칙에 맡기고, LLM에는 이해와 설명을 맡기는 구조를 좋아합니다.
+지금은 식단·운동·걷기 앱 세 개를 하나로 묶은 웰니스 AI 에이전트를 만들고 있습니다.
 
 🔗 **Portfolio** · https://junyeong-portfolio-one.vercel.app
 
@@ -30,9 +30,20 @@
 - 🏆 **2026** KNU×아진산업 제3회 실리 AX 기술전(AX 부문) 인기상 · AJIN Compliance
 - 🏆 **2025** 계명대학교 캡스톤디자인 우수상 · 대학생 307명 설문 기반 통계분석
 
-### Stack
+### Tech Stack
 
-`LangGraph` `LlamaIndex` `Ollama` `Gemma` `Qwen` `Gemini` `ChromaDB` `bge-m3` `PaddleOCR` `PyTorch` `FastAPI` `PostgreSQL` `Next.js` `React` `Docker`
+| 분야 | 기술 | 써 본 곳 |
+|---|---|---|
+| **Agent · 오케스트레이션** | `LangGraph` (Python · JS) `LlamaIndex` `Tool Calling` `Multi-Agent` | 웰니스 에이전트 그래프, 레모니, 사내 업무 에이전트 전환, KBO 플래너 |
+| **LLM 런타임 · 모델** | `Ollama` `LM Studio` `llama.cpp` `Gemini API` `Vertex AI` · `Gemma 4` `Qwen 3.5` `EXAONE` `LFM3` `d1-2B` | 로컬 LLM 서빙, 클라우드↔로컬 모델 전환, 용도별 모델 비교·선택 |
+| **RAG · 검색** | `ChromaDB` `pgvector` `FAISS` `BM25` 하이브리드 검색 · `bge-m3` `E5` `sentence-transformers` | 근거 문서 기반 답변, 멀티모달 도면 검색, 운동·영양 검색 |
+| **평가 · 안전** | 평가 문항 세트와 실행기, 규칙 + 판정 모델 가드, 구조화 출력(JSON 스키마) 검증 | 위기 신호 판정, 금지 답변 점검, 실패 사례 반복 수정 |
+| **NLP · Vision** | `PyTorch` `scikit-learn` `KcELECTRA` `PaddleOCR` `YOLO` `OpenCLIP` `GNN` | 감성 분석, 영양제 라벨 OCR, 도면 이미지 검색, 승률 예측 |
+| **Backend · Data** | `Python` `FastAPI` `TypeScript` `Node.js` · `PostgreSQL` `SQLite` `Redis` `Supabase` | API 서버, 영양 DB·음식 목록 구축, 사용자 기록 저장 |
+| **Frontend · App** | `Next.js` `React` `Tailwind CSS` `TanStack Query` `Three.js` `Leaflet` · `Flutter` `Android (WebView)` · `Astro` | 웹 서비스, 지도·3D 뷰어, 모바일 앱, 이 포트폴리오 |
+| **Infra · Deploy** | `Docker` `Docker Compose` `Caddy` `WSL` · `Vercel` `Firebase App Hosting` | 온프레미스 배포, 로컬 모델 서버, 웹 배포 |
+| **통계 · 분석** | `R` `SAS` `SQL` `Pandas` `statsmodels` | 통계학 전공, ADsP · SAS 자격 |
+| **AI 코딩 도구** | `Claude Code` `Codex` | 설계와 평가 기준은 직접 정하고 구현에 활용 |
 
 ### Background
 
